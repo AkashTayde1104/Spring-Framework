@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+
+  <bean  id="s" class="com.constructor.primitivearray.Student">
+  
+     <constructor-arg value ="101"></constructor-arg>
+     <constructor-arg value= "Rahul"></constructor-arg>
+     <constructor-arg >
+        <list>
+          <value>843593459</value>
+          <value>8495834593</value>
+        </list>
+     </constructor-arg>
+ 
+  </bean>
+  
+</beans>

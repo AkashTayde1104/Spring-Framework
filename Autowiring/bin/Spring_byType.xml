@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+<!-- we can use same bean id as a reference of 2ndary type or use different id also in byType for secondary bean -->
+
+  <bean id="a" class="com.tech.bytype.Address">
+    <property name="area_Name" value="Moshi"></property>
+    <property name="city_Name" value="Pune"></property>
+  </bean>
+  
+  <bean id="a1" class="com.tech.bytype.Address"  autowire-candidate="false" >
+    <property name="area_Name" value="Moshigaon"></property>
+    <property name="city_Name" value="Pune"></property>
+  </bean>
+  
+  <bean id="s" class="com.tech.bytype.Student"  autowire="byType">
+    <property name="s_Id" value="101"></property>
+    <property name="s_Name" value="Rani"></property>
+  </bean>
+   
+
+</beans>

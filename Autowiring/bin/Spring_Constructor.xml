@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+
+ <bean id="a" class="com.tech.constructor.Address">
+ 
+   <constructor-arg value="Moshi"></constructor-arg>
+   <constructor-arg value="pune"></constructor-arg>
+   
+   </bean>
+  
+
+
+  <bean id="s" class="com.tech.constructor.Student" autowire="constructor">
+  
+  <constructor-arg value="101" type="int"></constructor-arg>
+  <constructor-arg value="Ram"></constructor-arg>
+ 
+  </bean>
+
+</beans>

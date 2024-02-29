@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+  <bean id="a1" class="com.constructor.secondaryarray.Address">
+  <constructor-arg value="Moshi"></constructor-arg>
+  <constructor-arg value="Pune"></constructor-arg>
+  </bean>
+
+  <bean id="a2" class="com.constructor.secondaryarray.Address">
+    <constructor-arg value="Aalandi"></constructor-arg>
+    <constructor-arg value="Pune"></constructor-arg>
+  
+  </bean>
+  
+  <bean id="s" class="com.constructor.secondaryarray.Student">
+  <constructor-arg value="101"></constructor-arg>
+  
+  <constructor-arg value="Ritesh"></constructor-arg>
+  <constructor-arg>
+  <list>
+  <ref bean="a1"></ref>
+  <ref bean="a2"></ref>
+    
+  </list>
+  </constructor-arg>
+     </bean>
+
+</beans>
